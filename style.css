@@ -1,0 +1,251 @@
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 1.25rem 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav__btn {
+  appearance: none;
+  border: 0;
+  background: none;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.section .section__description {
+  font-size: 1.2rem;
+  color: #4f4f4f;
+  font-weight: lighter;
+  line-height: 1.8rem;
+}
+
+.section__startLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.section__btn {
+  background: #4717c9;
+  border: 0;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.section .section__link {
+  color: #4717c9;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #4717c9;
+}
+
+.section .section__listInfo ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #4f4f4f;
+}
+
+.sectionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sectionInfo header span {
+  font-weight: bold;
+  color: #4717c9;
+}
+
+.sectionInfo p {
+  color: #4f4f4f;
+  line-height: 1.8rem;
+}
+
+.sectionInfo article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: start;
+}
+
+.sectionInfo img {
+  width: fit-content;
+}
+
+.sectionExample {
+  background-color: #4717c9;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 0;
+  gap: 3rem;
+}
+
+.sectionExample header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionExample header .section__title {
+  color: white;
+  margin-bottom: 0;
+}
+
+.sectionExample header .section__btn {
+  color: #4717c9;
+  background: white;
+}
+
+.sectionExample img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sectionTestimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sectionTestimonial article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #4f4f4f35;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.sectionTestimonial article header {
+  display: flex;
+  gap: 1rem;
+}
+
+.sectionTestimonial article header .sectionTestimonial__testimonialName {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sectionTestimonial
+  article
+  header
+  .sectionTestimonial__testimonialName
+  span:nth-child(1) {
+  color: #4717c9;
+}
+
+.sectionTestimonial
+  article
+  header
+  .sectionTestimonial__testimonialName
+  span:nth-child(2) {
+  color: #4f4f4f;
+}
+
+.sectionTestimonial article div {
+  line-height: 1.8rem;
+}
+
+.sectionTestimonial article footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTestimonial article footer button {
+  border: 1px solid #4f4f4f35;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #4717c9;
+  font-weight: bold;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 768px) {
+  body {
+    padding: 1.25rem 9rem;
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+  .illustration {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)  */
+
+@media (min-width: 992px) {
+  body {
+    padding: 1.25rem 5rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .section__info {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+}
