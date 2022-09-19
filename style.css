@@ -57,6 +57,7 @@ section {
   align-items: center;
   gap: 10px;
 }
+
 .section__btn {
   background: #4717c9;
   border: 0;
@@ -248,4 +249,101 @@ section {
 
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
+  body {
+    padding: 1.25rem 16%;
+  }
+
+  .illustration {
+    width: 90%;
+    border-radius: 100%;
+    background-color: #d4cddf2c;
+  }
+
+  .section__startLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem;
+  }
+
+  .section__btn {
+    width: 40%;
+  }
+
+  .section__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .section__title {
+    font-size: 4rem;
+  }
+
+  .section .section__listInfo ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sectionInfo .section__title {
+    font-size: 2rem;
+    width: 50%;
+  }
+
+  .sectionInfo div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .sectionInfo div h2 {
+    font-weight: bold;
+  }
+
+  .sectionInfo p {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+    width: 90%;
+    padding: 0 1rem;
+    border-left: 1px solid #471bca42;
+    height: 50px;
+  }
+
+  .sectionExample {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    padding-bottom: 0;
+  }
+
+  .sectionExample header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+  }
+  .sectionExample img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sectionTestimonial {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .sectionTestimonial article {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  }
 }
