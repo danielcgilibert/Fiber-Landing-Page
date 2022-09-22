@@ -250,7 +250,7 @@ section {
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
   body {
-    padding: 1.25rem 16%;
+    padding: 1.25rem 20%;
   }
 
   .illustration {
