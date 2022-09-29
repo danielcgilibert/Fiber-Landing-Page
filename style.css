@@ -10,6 +10,16 @@ body {
   box-sizing: border-box;
 }
 
+.section__rated {
+  display: none;
+  gap: 2.5rem;
+}
+
+.section__rated div {
+  display: flex;
+  gap: 5px;
+}
+
 main {
   display: grid !important;
   grid-template-columns: 1fr;
@@ -34,6 +44,37 @@ section {
   appearance: none;
   border: 0;
   background: none;
+}
+
+.nav__Desktop button {
+  border: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav__Desktop {
+  display: none;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav__DesktopBtn--SignIn {
+  background: none;
+  color: black;
+}
+
+.nav ul {
+  display: none;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__DesktopBtn--SignOut {
+  background: #4717c9;
 }
 
 .illustration {
@@ -278,7 +319,17 @@ footer section {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+  .nav__Desktop {
+    display: flex;
+  }
 
+  .nav ul {
+    display: flex;
+  }
+
+  .nav__btn {
+    display: none;
+  }
   .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,11 +347,18 @@ footer section {
   body {
     padding: 1.25rem 20%;
   }
+  .section__rated {
+    display: flex;
+    gap: 2.5rem;
+  }
 
+  .section__rated div {
+    display: flex;
+    gap: 5px;
+  }
   .illustration {
     width: 90%;
     border-radius: 100%;
-    background-color: #d4cddf2c;
   }
 
   .section__startLinks {
@@ -322,7 +380,7 @@ footer section {
   }
 
   .section__title {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .section .section__listInfo ul {
