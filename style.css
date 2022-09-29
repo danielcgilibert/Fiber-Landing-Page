@@ -12,12 +12,10 @@ body {
 
 .section__rated {
   display: none;
-  gap: 2.5rem;
 }
 
 .section__rated div {
-  display: flex;
-  gap: 5px;
+  display: none;
 }
 
 main {
@@ -349,12 +347,16 @@ footer section {
   }
   .section__rated {
     display: flex;
-    gap: 2.5rem;
+    gap: 1rem;
   }
 
   .section__rated div {
     display: flex;
     gap: 5px;
+  }
+
+  .section__rated div img {
+    width: 20px;
   }
   .illustration {
     width: 90%;
